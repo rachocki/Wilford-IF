@@ -20,7 +20,7 @@ picture 1 "C:\Program Files (x86)\Inform 7\Internal\Miscellany\Cover.jpg"
 
 placeholder [IFID] = "6C628FE2-35AA-4707-B85A-BCE217A404DA"
 placeholder [RELEASE] = "1"
-placeholder [YEAR] = "2017"
+placeholder [YEAR] = "2018"
 placeholder [TITLE] = "Willford"
 placeholder [AUTHOR] = "Lady Corvus"
 placeholder [BLURB] = "A work of interactive fiction."

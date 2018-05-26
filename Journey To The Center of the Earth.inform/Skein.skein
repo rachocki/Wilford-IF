@@ -4,7 +4,7 @@
   <activeNode nodeId="node-1"/>
   <item nodeId="node-1">
     <command xml:space="preserve">- start -</command>
-    <result xml:space="preserve">Willford&#x000A;An Interactive Fiction by Lady Corvus&#x000A;Release 1 / Serial number 170718 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Uncle's Study&#x000A;The large, slightly cluttered study had a feeling of familiarity to it. Many memories of time spent with his late uncle were brought back clearly as Willford looked about at the damask-patterned wallpaper, at the heavy old furnishings, and through the dingy windows at the city below. (Exits: None)&#x000A;&#x000A;A line of glass-fronted bookshelves made up the north wall, all of them stuffed with the dusty volumes that his uncle had used for his work.&#x000A;&#x000A;The desk, a large roll-top, was pushed right up against the southern window. It appeared to be closed.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Willford&#x000A;An Interactive Fiction by Lady Corvus&#x000A;Release 1 / Serial number 180526 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Uncle's Study&#x000A;The large, slightly cluttered study had a feeling of familiarity to it. Many memories of time spent with his late uncle were brought back clearly as Willford looked about at the damask-patterned wallpaper, at the heavy old furnishings, and through the dingy windows at the city below. (Exits: West)&#x000A;&#x000A;A line of glass-fronted bookshelves made up the north wall, all of them stuffed with the dusty volumes that his uncle had used for his work.&#x000A;&#x000A;The desk, a large roll-top, was pushed right up against the southern window. It appeared to be closed.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>
@@ -330,10 +330,10 @@
   </item>
   <item nodeId="node-31">
     <command xml:space="preserve">examine bookshelves</command>
-    <result xml:space="preserve">The glass panels were already open. While the rest of the family had already pored over the shelves and taken what they wanted, Willford had also looked them over briefly, though not thoroughly.&#x000A;&#x000A;In Bookshelves is Books.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">The glass panels were already open. While the rest of the family had already pored over the shelves and taken what they wanted, Willford had also looked them over briefly, though not thoroughly. &#x000A;&#x000A;In Bookshelves is Books.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
-    <changed>NO</changed>
+    <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
       <child nodeId="node-32"/>
@@ -341,18 +341,27 @@
   </item>
   <item nodeId="node-32">
     <command xml:space="preserve">examine books</command>
-    <result xml:space="preserve">Many of the books were written in German, though Willford knew there were at least five different languages up on that shelf. Somehow, Willford thought, something was a bit off. Perhaps it had to do with the rest of the family picking through them and disarranging them.&#x000A;&#x000A;In Books is a key.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Many of the books were written in German, though Willford knew there were at least five different languages up on that shelf. Somehow, Willford thought, something was a bit off. Perhaps it had to do with the rest of the family picking through them and disarranging them. &#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
-    <changed>NO</changed>
+    <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
       <child nodeId="node-33"/>
+      <child nodeId="node-102"/>
     </children>
   </item>
   <item nodeId="node-33">
     <command xml:space="preserve">take key</command>
     <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-102">
+    <command xml:space="preserve">read books</command>
+    <result xml:space="preserve">&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>
@@ -768,10 +777,10 @@
   </item>
   <item nodeId="node-73">
     <command xml:space="preserve">read books</command>
-    <result xml:space="preserve">Many of the books were written in German, though Willford knew there were at least five different languages up on that shelf. Somehow, Willford thought, something was a bit off. Perhaps it had to do with the rest of the family picking through them and disarranging them.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">While he would have loved nothing better than to read his uncle's entire collection, there was no possible way to do that at the moment.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
-    <changed>NO</changed>
+    <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
       <child nodeId="node-74"/>
@@ -1028,17 +1037,6 @@
   <item nodeId="node-100">
     <command xml:space="preserve">look at key</command>
     <result xml:space="preserve">You see nothing special about the key.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-101"/>
-    </children>
-  </item>
-  <item nodeId="node-101">
-    <command xml:space="preserve">take key</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>

@@ -8,11 +8,12 @@ Uncle Leo is a backdrop. Uncle Leo is everywhere. Understand "Uncle" and "Leo" a
 Instead of examining Uncle Leo, say "Willford wished he could see his uncle again. Alas, this was not possible."
 Before thinking about Uncle Leo, say "Willford took a moment to remember his eccentric uncle. He had been something of a recluse, but a brilliant scientist. Of all his upper-crust family, he only seemed to get along well with Willford himself, the other black-sheep of the family."
 
-Windows are a backdrop. Windows are in Uncle's Study. Understand "window" as windows.
+Windows are a backdrop. Windows are in Uncle's Study. Understand "window" as windows. [TODO: Add other rooms to list as they are added.]
 
 [=====New Actions=====]
 
-Reading is an action applying to one visible thing. Understand "Read [something]" as reading. [The problem is that the rulebook has decided that Examine takes precendence on this command, so it never gets to read.]
+Understand the command "read" as something new. 
+Reading is an action applying to one visible thing. Understand "Read [something]" as reading. 
 Thinking About is an action applying to one thing. Understand "Think about [something]", "Consider [something]", and "Ponder [something]" as thinking about. 
 Understand "look out [something]" as examining.
 Dying is an action applying to nothing. Understand "die", "perish", and "expire" as dying.
@@ -29,6 +30,22 @@ Before reading something:
 		say "Willford attempted to read it, but could not, as it was unreadable."
 		
 Physical State is a kind of value. The physical states are dead and alive. The physical state is usually alive.
+
+[=====Altering Default Printouts=====]
+
+[TODO: Add some flavor here.]
+Report taking something:
+	say "Willford picked up [the noun]." instead.
+Report dropping something:
+	say "Willford dropped [the noun]." instead.
+Report opening something:
+	say "Willford opened [the noun]." instead.
+Report closing something:
+	say "Willford closed [the noun]." instead.
+Report unlocking something with something:
+	say "Willford unlocked [the noun]." instead.
+Report locking something with something:
+	say "Willford locked [the noun]." instead.
 
 [=====The Player=====]
 
@@ -66,7 +83,7 @@ The encyclopedia is nowhere. The encyclopedia is a container. The encyclopedia h
 
 Books are in the bookshelves. "His late uncle's extensive collection was all there, with the exception of the odd volume that had caught someone's fancy." Books is a container. Books have a mysteriousness. The books are enigmatic. The description is "Many of the books were written in German, though Willford knew there were at least five different languages up on that shelf.[if the books are enigmatic] Somehow, Willford thought, something was a bit off. Perhaps it had to do with the rest of the family picking through them and disarranging them. [otherwise] Now that he had noticed the upside-down encyclopedia, he knew why it had felt a bit off."
 Instead of taking books, say "Wilford wished he could take all of the books back with him, but had no means to do so at the time.".
-Instead of reading books, say "While he would have loved nothing better than to read his uncle's entire collection, there was no possible way to do that at the moment." [This doesn't work. At all.]
+Before reading books, say "While he would have loved nothing better than to read his uncle's entire collection, there was no possible way to do that at the moment." 
 After thinking about books:
 	say "Willford focused his thoughts on the books. Giving them a hard look, he realized that volume three of his uncle's favourite encyclopedia set was upside-down. That was very uncharacteristic of Uncle Leo, and he couldn't imagine any of his family members picking up only the third volume to look at.";
 	now the mysteriousness of the books is solved;
@@ -97,22 +114,12 @@ The pigeonholes are a part of the desk. Pigeonholes are a container.
 Instead of examining the pigeonholes while the desk is closed, say "Willford, wishing he could see through the wooden top, attempted to get a glimpse of the pigeonholes through the slats. Unfortunately, it yielded no results."
 
 Letter is in the desk. Letter has a readability. Letter is readable. The description is "A letter adressed to Willford, written in Uncle Leo's usual messy hand."
-Before reading letter, say "I haven't come up with what on earth this letter is supposed to say yet, so this is what you get. Conglaturation a winner is u". [IT'S BROKEN. If I can't find a good way to fix this, then just tack the contents of the letter onto the end of the letter description.]
-[Here's a TEMP FIX for this particular part.]
-After examining letter one time, say "This is the contents of the letter. You are reading it. Learn how to code properly, you egg."
+Before reading letter, say "I haven't come up with what on earth this letter is supposed to say yet, so this is what you get. Conglaturation a winner is u".
 
 The ink pot is in the left drawer. The ink pot has a mysteriousness. The ink pot is enigmatic. The description is "Holding it to the light, he looked through the sepia ink in its small, glass bottle. [if the mysteriousness of the ink pot is enigmatic]There didn't seem to be anything out of the ordinary about it."
 
 Drawers are a backdrop in the study. Instead of examining the drawers, say "Willford, though he would have liked to, could not examine both drawers at once."
 Instead of opening drawers, say "Willford could not open both drawers at the same time, for the desk was too wide, and the drawer tracks a bit too sticky with age.".
-
-	[Actions in the Study]
-Instead of closing bookshelves:
-	say "Willford closed the bookshelves.";
-	now the bookshelves are closed.
-Instead of opening bookshelves:
-	say "Willford opened the bookshelves.";
-	now the bookshelves are open.
 
 [=====Upstairs Hallway=====]
 Upstairs Hallway is west of Uncle's study. "The upstairs hallway was a narrow passage, with several old paintings along the walls. It connected the study to the bedroom, and had a staircase leading downstairs. (Exits: East, West, Down)".
