@@ -4,7 +4,7 @@
   <activeNode nodeId="node-1"/>
   <item nodeId="node-1">
     <command xml:space="preserve">- start -</command>
-    <result xml:space="preserve">Willford&#x000A;An Interactive Fiction by Lady Corvus&#x000A;Release 1 / Serial number 180526 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Uncle's Study&#x000A;The large, slightly cluttered study had a feeling of familiarity to it. Many memories of time spent with his late uncle were brought back clearly as Willford looked about at the damask-patterned wallpaper, at the heavy old furnishings, and through the dingy windows at the city below. (Exits: West)&#x000A;&#x000A;A line of glass-fronted bookshelves made up the north wall, all of them stuffed with the dusty volumes that his uncle had used for his work.&#x000A;&#x000A;The desk, a large roll-top, was pushed right up against the southern window. It appeared to be closed.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Willford&#x000A;An Interactive Fiction by Lady Corvus&#x000A;Release 1 / Serial number 180526 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Uncle's Study&#x000A;The large, slightly cluttered study had a feeling of familiarity to it. Many memories of time spent with his late uncle were brought back clearly as Willford looked about at the damask-patterned wallpaper, at the heavy old furnishings, and through the dingy windows at the city below. (Exits: West)&#x000A;&#x000A;A line of glass-fronted bookshelves made up the north wall, all of them stuffed with the many volumes that his uncle had used for his work.&#x000A;&#x000A;The desk, a large roll-top, was pushed right up against the southern window. It appeared to be closed.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>
@@ -949,10 +949,10 @@
   </item>
   <item nodeId="node-91">
     <command xml:space="preserve">die</command>
-    <result xml:space="preserve">*** Willford is dead. RIP, sweet prince. ***&#x000A;&#x000A;&#x000A;&#x000A;Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?&#x000A;&gt;</result>
+    <result xml:space="preserve">Willford felt a sudden pain in his chest; he had always had a weak heart, and now it seemed it was going to kill him. It became harder and harder to breathe, his ears starting to ring and his vision going blurry. He collapsed, never to rise again.&#x000A;&#x000A;&#x000A;&#x000A;    *** Willford has died. RIP, sweet prince. ***&#x000A;&#x000A;&#x000A;&#x000A;Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
-    <changed>NO</changed>
+    <changed>YES</changed>
     <temporary score="0">YES</temporary>
   </item>
   <item nodeId="node-92">
@@ -973,7 +973,29 @@
   </item>
   <item nodeId="node-94">
     <command xml:space="preserve">think about uncle</command>
-    <result xml:space="preserve">Willford took a moment to remember his eccentric uncle. He had been something of a recluse, but a brilliant scientist. Of all his upper-crust family, he only seemed to get along well with Willford himself, the other black-sheep of the family.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-129"/>
+    </children>
+  </item>
+  <item nodeId="node-129">
+    <command xml:space="preserve">think about uncle leo</command>
+    <result xml:space="preserve">Willford took a moment to remember his eccentric uncle. He had been something of a recluse, but a brilliant scientist. Of all his upper-crust family, he only seemed to get along well with Willford himself, the other black-sheep of the family.&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-130"/>
+    </children>
+  </item>
+  <item nodeId="node-130">
+    <command xml:space="preserve">think about leo</command>
+    <result xml:space="preserve">&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>
@@ -1015,28 +1037,6 @@
   <item nodeId="node-98">
     <command xml:space="preserve">look at shelf</command>
     <result xml:space="preserve">The glass panels were already open. While the rest of the family had already pored over the shelves and taken what they wanted, Willford had also looked them over briefly, though not thoroughly. &#x000A;&#x000A;In Bookshelves are an encyclopedia and Books.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-99"/>
-    </children>
-  </item>
-  <item nodeId="node-99">
-    <command xml:space="preserve">look at encyclopedia</command>
-    <result xml:space="preserve">In the encyclopedia is a key.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-100"/>
-    </children>
-  </item>
-  <item nodeId="node-100">
-    <command xml:space="preserve">look at key</command>
-    <result xml:space="preserve">You see nothing special about the key.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>

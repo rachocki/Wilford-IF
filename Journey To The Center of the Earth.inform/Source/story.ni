@@ -6,18 +6,34 @@ Willford is a backdrop. Willford is everywhere.
 
 Uncle Leo is a backdrop. Uncle Leo is everywhere. Understand "Uncle" and "Leo" as uncle leo.
 Instead of examining Uncle Leo, say "Willford wished he could see his uncle again. Alas, this was not possible."
-Before thinking about Uncle Leo, say "Willford took a moment to remember his eccentric uncle. He had been something of a recluse, but a brilliant scientist. Of all his upper-crust family, he only seemed to get along well with Willford himself, the other black-sheep of the family."
 
 Windows are a backdrop. Windows are in Uncle's Study. Understand "window" as windows. [TODO: Add other rooms to list as they are added.]
 
+Family is a backdrop. Family is everywhere. Understand "family members" as family. 
+Instead of examining family, say "Pardon? I don't know what you mean."
+
 [=====New Actions=====]
 
+[TODO: Add default statements of success/failure.]
 Understand the command "read" as something new. 
 Reading is an action applying to one visible thing. Understand "Read [something]" as reading. 
-Thinking About is an action applying to one thing. Understand "Think about [something]", "Consider [something]", and "Ponder [something]" as thinking about. 
 Understand "look out [something]" as examining.
 Dying is an action applying to nothing. Understand "die", "perish", and "expire" as dying.
 Suicide is an action applying to nothing. Understand "kill self" and "commit suicide" as suicide.
+Thinking About is an action applying to one topic. Understand "Think about [text]", "Consider [text]", and "Ponder [text]" as thinking about. 
+After thinking about a topic listed in the Table of Thoughts, say "[thought entry]"
+
+Table of Thoughts
+Topic	Thought
+"Family"	"Willford took a moment to consider his unfortunate situation, the death of his uncle drawing his thoughts to the rest of his family. Though it wasn't all that uncommon, it was still unfortunate, as far as he was concerned. His father had always been cold to him, a man more concerned with money than with his children. His stepmother was a young heiress who had never much cared for Willford, a quiet and somewhat withdrawn child. His extended family was no better, regarding him either as a nuisance or a pawn to be used to get what they wanted. Unfortunate, he thought, trying to shake off the case of the morbs this train of thought was causing him."
+"Lawrence"	"[if the mysteriousness of lawrence is enigmatic]Who? Willford didn't know why that name popped into his head, as he didn't know anyone that answered to that name.[else]Willford found his thoughts drifting back to Lawrence. Even thinking about him made his heart skip a beat."
+"Leo"	"Willford took a moment to remember his eccentric uncle. He had been something of a recluse, but a brilliant scientist. Of all his upper-crust family, he only seemed to get along well with Willford himself, the other black-sheep of the family."
+"Self"	"While it was tempting, Willford didn't wish to delve too deeply into philosophy at the moment."
+"Uncle Leo/Uncle/Leo"	"Willford took a moment to remember his eccentric uncle. He had been something of a recluse, but a brilliant scientist. Of all his upper-crust family, he only seemed to get along well with Willford himself, the other black-sheep of the family."
+"Uncle"	"Willford took a moment to remember his eccentric uncle. He had been something of a recluse, but a brilliant scientist. Of all his upper-crust family, he only seemed to get along well with Willford himself, the other black-sheep of the family."
+"Willford"	"While it was tempting, Willford didn't wish to delve too deeply into philosophy at the moment."
+
+
 
 [=====Values and Properties=====]
 
@@ -31,9 +47,9 @@ Before reading something:
 		
 Physical State is a kind of value. The physical states are dead and alive. The physical state is usually alive.
 
-[=====Altering Default Printouts=====]
+[=====Default Printouts=====]
 
-[TODO: Add some flavor here.]
+[TODO: Add some flavor here?]
 Report taking something:
 	say "Willford picked up [the noun]." instead.
 Report dropping something:
@@ -54,13 +70,13 @@ Willford is a backdrop. Willford is everywhere.
 The player has a physical state. The player is alive.
 
 Instead of examining the Willford, try examining the player. 
-Instead of thinking about the willford, try thinking about the player.
-Instead of thinking about the player, say "While it was tempting, Willford didn't wish to delve too deeply into philosophy at the moment."
 
 The clothes are worn by the player. Understand "outfit", "clothing", "shirt", "pants", and "garments" as the clothes. The description is "This look was very much to the fashion of the day, deep black and tailored perfectly."
-Instead of taking off clothes, say "Willford found no reason to be indecent, and so did not go to the trouble of disrobing."
+Instead of taking off clothes, say "Willford found no reason to be indecent, and so did not go to the trouble of disrobing." [TODO: Add some contexts in which this is doable, such as changing clothes or bathing.]
 
 Instead of dying, now the physical state of the player is dead.
+[TODO: Add some if statements to change this based on context. The written will be the default.]
+Before dying, say "Willford felt a sudden pain in his chest; he had always had a weak heart, and now it seemed it was going to kill him. It became harder and harder to breathe, his ears starting to ring and his vision going blurry. He collapsed, never to rise again."
 
 Instead of suicide, say "Though the thought passed through his head, it didn't seem at all the rational way to deal with the situation."
 
@@ -74,17 +90,17 @@ Furnishings are scenery in the study. "A few chairs and glass-fronted bookshelve
 
 Instead of examining windows, say "Willford glanced out the window at the city below. It was the same, dirty, grey street as it had always been, but it seemed somehow more dreary than usual."
 
-Bookshelves are a container in the study. The bookshelves are openable and open."A line of glass-fronted bookshelves made up the north wall, all of them stuffed with the dusty volumes that his uncle had used for his work." The description is "[if the bookshelves are open]The glass panels were already open. While the rest of the family had already pored over the shelves and taken what they wanted, Willford had also looked them over briefly, though not thoroughly. [otherwise]The glass panels of the shelves were closed, shutting in the many volumes behind them." Understand "shelves", "shelf", and "bookshelf" as bookshelves.
+Bookshelves are a container in the study. The bookshelves are openable and open."A line of glass-fronted bookshelves made up the north wall, all of them stuffed with the many volumes that his uncle had used for his work." The description is "[if the bookshelves are open]The glass panels were already open. While the rest of the family had already pored over the shelves and taken what they wanted, Willford had also looked them over briefly, though not thoroughly. [otherwise]The glass panels of the shelves were closed, shutting in the many volumes behind them." Understand "shelves", "shelf", and "bookshelf" as bookshelves.
 Glass is a part of the bookshelves. "The glass was a bit smudged, but not terribly dirty."
 
 The key is nowhere. The description is "[if the key is in the encyclopedia]Willford, suddenly realizing what he was looking for, noticed the smallest glint of silver in the pages of third volume.[else]A small, tarnished key, seemingly hardly worthy of note, was quite an exciting prospect to Willford. Examining it closer, he suspected that it belonged to the roll-top desk." The key unlocks the desk.
 
 The encyclopedia is nowhere. The encyclopedia is a container. The encyclopedia has a readability. The encyclopedia is readable. The description is "A well cared-for encyclopedia dedicated to things beginning with 'c'." Understand "3rd volume", "book", and "third volume" as the encyclopedia.
 
-Books are in the bookshelves. "His late uncle's extensive collection was all there, with the exception of the odd volume that had caught someone's fancy." Books is a container. Books have a mysteriousness. The books are enigmatic. The description is "Many of the books were written in German, though Willford knew there were at least five different languages up on that shelf.[if the books are enigmatic] Somehow, Willford thought, something was a bit off. Perhaps it had to do with the rest of the family picking through them and disarranging them. [otherwise] Now that he had noticed the upside-down encyclopedia, he knew why it had felt a bit off."
+Books are in the bookshelves. "His late uncle's extensive collection was all there, with the exception of the odd volume that had caught someone's fancy." Books is a container. Books have a mysteriousness. The books are enigmatic. The description is "Many of the books were written in German, though Willford knew there were at least five different languages up on that shelf.[if the books are enigmatic] Somehow, Willford thought, something was a bit off. Perhaps it had to do with the rest of the family picking through them and disarranging them. [otherwise] Now that he had noticed the upside-down encyclopedia, he knew why it had felt a bit off." [TODO: Maybe alter this?]
 Instead of taking books, say "Wilford wished he could take all of the books back with him, but had no means to do so at the time.".
-Before reading books, say "While he would have loved nothing better than to read his uncle's entire collection, there was no possible way to do that at the moment." 
-After thinking about books:
+Before reading books, say "While he would have loved nothing better than to read his uncle's entire collection, he didn't have nearly that much time to spare." 
+After thinking about "books":
 	say "Willford focused his thoughts on the books. Giving them a hard look, he realized that volume three of his uncle's favourite encyclopedia set was upside-down. That was very uncharacteristic of Uncle Leo, and he couldn't imagine any of his family members picking up only the third volume to look at.";
 	now the mysteriousness of the books is solved;
 	now the encyclopedia is in the bookshelves;
@@ -126,8 +142,21 @@ Upstairs Hallway is west of Uncle's study. "The upstairs hallway was a narrow pa
 
 Paintings are scenery in the upstairs hallway. The description is "They are of various subjects, from portraits of long-dead family members to picturesque landscapes.".
 Instead of taking the paintings, say "Willford wasn't particularly taken with any of the paintings, especially not enough to carry one around with him. In fact, some of them gave him the creeps."
+
+[=====Bedroom=====]
+Bedroom is west of Upstairs Hallway. "Uncle's bedroom, simple and  functional in all respects. The only real personal touch in this room is a small collection of sketched portraits pinned to the wall. (Exits: East)".
+Portraits are scenery in  the bedroom. The description is "Sketches of various individuals, most of whom Willford didn't recognize. They were quite beautiful, however, very well executed sketches. Art had been one of Uncle Leo's hobbies, and clearly he had been rather good at it. Willford took a moment to dwell on one in paricular, a strikingly beautiful young man about his own age."
+Bed is scenery in the bedroom. The description is "A rustic wooden bed, the linens in disarray. Nothing of note."
 	
+[=====Lower Gallery=====]
+Lower Gallery is below Upstairs Hallway.
+
+[=====NPCs=====]
+Lawrence is a man. The description is "A rather handsome young man, dark in complexion. His well-groomed appearance perfectly accented his upright demeanor. Willford couldn't help but stare a little when confronted with such an attractive individual.". Lawrence has a mysteriousness. Lawrence is enigmatic.
+Stepmother is a woman.
+Father is a man.
+
 [=====Win/Loss Checks=====]
 
 Every turn:
-	If the physical state of the player is dead, end the story saying "Willford is dead. RIP, sweet prince."
+	If the physical state of the player is dead, end the story saying "Willford has died. RIP, sweet prince."
